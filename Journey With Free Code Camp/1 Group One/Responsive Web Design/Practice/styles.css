@@ -1,0 +1,74 @@
+body{
+  background-image: url(Roasted_coffee_beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1,h2,p{
+  text-align: center;
+}
+h1{
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+h2{
+  font-size: 30px;
+  margin-top: 20px;
+}
+h1,h2{
+  font-family: Impact,serif;
+}
+hr{
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+  border-width: 1px;
+}
+
+img{
+  display: block;
+  margin: auto;
+  margin-top: -25px;
+}
+.menu{
+  background-color: burlywood;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.item p{
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.dessert, .flavor{
+  text-align: left;
+  width: 75%;
+}
+.price{
+  text-align: right;
+  width: 25%;
+}
+.bottomline{
+  margin-top: 25px;
+}
+
+/* footer */
+footer p{
+  font-size: 14px;
+}
+.address{
+  margin-bottom: 5px;
+}
+a{
+  color:brown;
+}
+a:hover,a:active{
+  color: brown;
+}
+a:visited{
+  color: green;
+}
+
