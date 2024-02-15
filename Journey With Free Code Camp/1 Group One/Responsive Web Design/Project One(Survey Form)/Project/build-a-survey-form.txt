@@ -1,0 +1,78 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <titile>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fillup this survey form with required information</p>
+    <form id="survey-form">
+      <label id="name-label">Name: <input type="text" id="name" placeholder="Name " required /><label>
+      <label id="email-label">Email: <input type="email" id="email" pattern=".+@example\.com" placeholder="Email" required/><label>
+      <label id="number-label">Age: <input type="number" id="number" pattern="[0-9]" min="10" max="120" placeholder="Age" />
+      </label>
+      
+        <label>Select any one:
+        <select id="dropdown" name="status">
+          <option>Married</option>
+          <option>Unmarried</option>
+        </select>
+        </label>
+
+      <fieldset id="terms">
+        <legend>Status:</legend>
+          <label for="P-terms"><input type="radio" id="P-terms" name="Status" value="personal" />Personal
+          </label>
+      <label for="B-terms"><input type="radio" id="B-terms" name="Status" value="business" />Business
+          </label>
+          </fieldset>
+          <fieldset>
+            <legend>Fav Pet:</legend>
+            <label for="dog"><input type="checkbox" id="dog" value="dog" name="pets"/> Dog</label>
+            <label for="fish"><input type="checkbox" id="fish" value="fish" name="pets"/> Fish</label>
+            <label for="cat"><input type="checkbox" id="cat" value="cat" name="pets"/> Cat</label>
+            <label for="panda"><input type="checkbox" id="panda" value="panda" name="pets"/> Panda</label>
+</fieldset>
+
+<fieldset>
+  <legend>Leave us a Message:</legend>
+
+  <textarea id="msg" name="msg" rows="5" cols="30"></textarea>
+  </fieldset>
+
+  <input type="submit" value="Submit" id="submit">
+      </form>
+
+    </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+#P-terms,#B-terms{
+  display:inline;
+}
+label{
+  display:block;
+}
+fieldset{
+  border: none;
+}
+input[type="text"]{
+  display:block;
+}
+input[type="email"]{
+  display:block;
+}
+input[type="number"]{
+  display:block;
+  width:60%;
+}
+
+** end of undefined **
+

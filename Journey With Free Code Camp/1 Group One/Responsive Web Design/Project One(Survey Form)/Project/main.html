@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fillup this survey form with required information</p>
+
+
+  <form id="survey-form">
+
+
+   <fieldset>
+    <legend>Personal information</legend>
+    <label id="name-label">Name: <input type="text" id="name" placeholder="Name " required /><label>
+      <label id="email-label">Email: <input type="email" id="email" pattern=".+@example\.com" placeholder="Email"
+          required /><label>
+          <label id="number-label">Age: <input type="number" id="number" pattern="[0-9]" min="10" max="120"
+              placeholder="Age" />
+          </label>
+   </fieldset>
+
+            <label>Marital Status:
+              <select id="dropdown" name="status">
+                <option value="">Select an Option</option>
+                <option value="1">Married</option>
+                <option value="2">Unmarried</option>
+              </select>
+            </label>
+
+            <fieldset id="terms">
+              <legend>Status:</legend>
+              <label for="P-terms"><input type="radio" id="P-terms" name="Status"
+                class="inline"  value="personal" />Personal
+              </label>
+              <label for="B-terms"><input type="radio" id="B-terms"
+                class="inline" 
+              name="Status" value="business" />Business
+              </label>
+            </fieldset>
+            <fieldset id="Pets">
+              <legend>Fav Pet:</legend>
+              <label for="dog"><input type="checkbox" id="dog" value="dog" class="inline" name="pets" /> Dog</label>
+              <label for="fish"><input type="checkbox" id="fish" value="fish" class="inline" name="pets" /> Fish</label>
+              <label for="cat"><input type="checkbox" id="cat" value="cat" class="inline" name="pets" /> Cat</label>
+              <label for="panda"><input type="checkbox" id="panda" value="panda" class="inline" name="pets" /> Panda</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Leave us a Message:</legend>
+
+              <textarea id="msg" name="msg" rows="5" cols="27" placeholder="Type Your Message Here"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit">
+  </form>
+
+
+</body>
+
+</html>
